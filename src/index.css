@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: Audiowide;
+		src: url("./assets/fonts/Audiowide.ttf");
+	}
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply bg-navy-green overflow-x-hidden text-green-slate font-raleway;
+	}
+	section {
+		@apply max-w-[1000px] mx-auto py-[60px] sm:py-20 md:py-[100px];
+	}
+}
+
+@layer components {
+	.mobile-links {
+		font-size: clamp(14px, 4vw, 18px);
+	}
+	.big-heading {
+		font-size: clamp(40px, 7vw, 80px);
+		font-weight: 700;
+	}
+}
