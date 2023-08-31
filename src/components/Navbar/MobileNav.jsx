@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Button from "../../UI/Button";
+import ResumeButton from "../ResumeButton";
 import NavLink from "./NavLink";
 
 const sideBarStyles =
@@ -20,25 +20,22 @@ const MobileNav = ({ isMenuOpen }) => {
 					isMenuOpen ? "translate-x-0" : "translate-x-full"
 				}`}
 			>
-				<nav className="w-full flex flex-col items-center justify-between h-full py-5 space-y-9">
+				<nav className="w-full flex flex-col items-center justify-between py-5 space-y-9">
 					<ol className="flex flex-col space-y-5 flex-1 justify-evenly w-full">
 						<li>
-							<NavLink name="about" index="01" />
+							<NavLink name="about" />
 						</li>
 						<li>
-							<NavLink name="projects" index="02" />
+							<NavLink name="projects" />
 						</li>
 						<li>
-							<NavLink name="contact" index="03" />
+							<NavLink name="contact" />
 						</li>
 					</ol>
-					<Button
+					<ResumeButton
 						className="py-4 px-[50px] text-sm"
-						href="/resume.pdf"
 						bgColor="bg-light-navy-green"
-					>
-						Resume
-					</Button>
+					/>
 				</nav>
 			</aside>
 		</>

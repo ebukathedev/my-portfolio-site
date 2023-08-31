@@ -1,39 +1,58 @@
-import Button from "../UI/Button";
+import { motion } from "framer-motion";
+import ResumeButton from "../components/ResumeButton";
 
 const Hero = () => {
 	return (
-		<section className="h-screen min-h-screen pt-[100px] flex flex-col justify-center items-start min-[700px]:h-auto max-[360px]:h-auto">
+		<section className="hero">
 			<div className="leading-[1.1]">
-				<div>
-					<h1 className="font-mono text-green mb-5">
+				<motion.div
+					initial={{ opacity: 0, transform: "translate(0px, 25px)" }}
+					whileInView={{
+						opacity: 1,
+						transform: "translate(0px, 0px)",
+					}}
+					transition={{ duration: 0.3 }}
+				>
+					<h1 className="text-green mb-5 font-medium">
 						Hi, my name is
 					</h1>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, transform: "translate(0px, 25px)" }}
+					whileInView={{
+						opacity: 1,
+						transform: "translate(0px, 0px)",
+					}}
+					transition={{ duration: 0.3, delay: 0.3 }}
+				>
 					<h2 className="big-heading text-lightest-green-slate">
 						Ebuka Ejiofor.
 					</h2>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, transform: "translate(0px, 25px)" }}
+					whileInView={{
+						opacity: 1,
+						transform: "translate(0px, 0px)",
+					}}
+					transition={{ duration: 0.3, delay: 0.6 }}
+				>
 					<h3 className="big-heading mt-2">
 						I bring your ideas to life.
 					</h3>
-				</div>
+				</motion.div>
 			</div>
 
 			<div>
-				<p className="mt-5 max-w-[550px] lg:text-lg">
-					I’m a software engineer specializing in building{" "}
-					<span className="text-green"> Frontend applications </span>{" "}
-					and exceptional digital experiences. I take pride in my work
-					and ensure I deliver the fastest and most responsive
-					application possible.
+				<p className="mt-5 max-w-[550px] lg:text-lg lg:max-w-[590px]">
+					I’m a software engineer specializing in building Frontend
+					applications and exceptional digital experiences. I take
+					pride in my work and ensure I deliver the fastest and most
+					responsive application possible.
 				</p>
 			</div>
-			<div className="mt-5">
-				<Button href="/" className="py-3 px-10">
-					Resume
-				</Button>
+			<div className="mt-8">
+				<ResumeButton className="py-3 px-10" />
 			</div>
 		</section>
 	);

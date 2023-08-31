@@ -1,29 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Work+Sans:wght@600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
 	@font-face {
-		font-family: Audiowide;
-		src: url("./assets/fonts/Audiowide.ttf");
+		font-family: Raleway;
+		src: url("./assets/fonts/Raleway.ttf");
 	}
 	html {
 		@apply scroll-smooth;
 	}
+	html::-webkit-scrollbar {
+		@apply w-[5px];
+	}
+	html::-webkit-scrollbar-thumb {
+		@apply rounded-lg bg-dark-green-slate;
+	}
+	html::-webkit-scrollbar-track {
+		@apply bg-navy-green;
+	}
 	body {
-		@apply bg-navy-green overflow-x-hidden text-green-slate font-raleway;
+		@apply overflow-x-hidden bg-navy-green text-green-slate font-raleway selection:bg-lightest-navy-green selection:text-lightest-green-slate;
 	}
 	section {
-		@apply max-w-[1000px] mx-auto py-[60px] sm:py-20 md:py-[100px];
+		@apply max-w-[1000px] mx-auto;
 	}
 }
 
 @layer components {
+	.transition-normal {
+		@apply transition-all duration-300 ease-in-out;
+	}
+
 	.mobile-links {
 		font-size: clamp(14px, 4vw, 18px);
 	}
+
 	.big-heading {
-		font-size: clamp(40px, 7vw, 80px);
+		font-size: clamp(40px, 7.5vw, 80px);
 		font-weight: 700;
+	}
+
+	.pill {
+		@apply bg-light-navy-green py-[6px] px-[9px] text-lightest-green-slate border border-light-green-slate rounded-md uppercase;
+	}
+
+	.hero {
+		@apply h-screen min-h-screen pt-0 pb-0 flex flex-col justify-center items-start min-[700px]:h-auto min-[700px]:pt-[100px] max-[360px]:h-auto max-[360px]:pt-[100px];
+	}
+
+	.section {
+		@apply py-[60px] sm:py-20 md:py-[100px];
+	}
+
+	.numbered-heading {
+		font-size: clamp(26px, 5vw, 32px);
+		@apply bg-dark-navy-green relative font-bold capitalize flex items-center w-fit px-4 py-1 border-light-green-slate border text-lightest-green-slate whitespace-nowrap mt-[10px] mb-10;
+	}
+
+	.numbered-heading::before {
+		counter-increment: section;
+		content: attr(data-num) ".";
+		font-size: clamp(16px, 3vw, 20px);
+		@apply relative self-end mb-1 mr-2 font-mono font-normal text-green md:mr-3;
+	}
+
+	.profile-pic-wrapper {
+		@apply relative w-full transition-normal rounded-md bg-green hover:-translate-x-1 hover:-translate-y-1 shadow-[0_10px_30px_-15px] shadow-green-navy-shadow outline-none;
+	}
+
+	.profile-pic-wrapper::before,
+	.profile-pic-wrapper::after {
+		content: "";
+		@apply absolute block w-full h-full transition-normal rounded-md;
+	}
+
+	.profile-pic-wrapper::before {
+		@apply top-0 left-0 bg-navy-green;
+	}
+
+	.profile-pic-wrapper::after {
+		@apply top-[14px] left-[14px] -z-[1] border-2 border-green hover:translate-x-[8px] hover:translate-y-[8px];
 	}
 }

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const buttonStyles =
-	"relative block transition-all duration-300 ease-in-out delay-100 border rounded-md border-green hover:-translate-x-1 hover:-translate-y-1 text-green font-mono";
+	"relative block transition-all duration-300 ease-in-out border rounded-md border-green hover:-translate-x-1 hover:-translate-y-1 text-green";
 
 const Button = ({ children, href, className, bgColor }) => {
 	return (

@@ -1,27 +1,60 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DesktopNav from "../components/Navbar/DesktopNav";
 import MobileNav from "../components/Navbar/MobileNav";
 import HamburgerMenu from "../components/Navbar/HamburgerMenu";
+import { VscCode } from "react-icons/vsc";
+import SideLinks from "../components/SideLinks";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-
+	const [navbar, setNavbar] = useState(false);
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
 	};
 
+	useEffect(() => {
+		const changeHeight = () => {
+			if (window.scrollY > 100) {
+				setNavbar(true);
+			} else {
+				setNavbar(false);
+			}
+		};
+
+		const onScroll = setTimeout(() => {
+			window.addEventListener("scroll", changeHeight);
+		}, 500);
+
+		return () => {
+			clearTimeout(onScroll);
+			window.removeEventListener("scroll", null);
+		};
+	}, []);
+
 	return (
-		<header className="fixed z-50 top-0 right-0 left-0 h-[100px] flex items-center px-6 md:px-10 bg-navy-green/80 lg:px-[50px] backdrop-blur-[10px]">
-			<nav className="flex items-center justify-between w-full font-mono">
-				{/* logo and hamburger */}
-				<div className="flex items-center justify-center px-3 text-lg border border-green text-green">
-					<a href="/">ebukathedev</a>
-				</div>
-				<HamburgerMenu onToggleMenu={toggleMenu} isMenuOpen={isOpen} />
-				<DesktopNav />
-				<MobileNav isMenuOpen={isOpen} />
-			</nav>
-		</header>
+		<>
+			<header
+				className={`fixed z-50 top-0 right-0 left-0 flex items-center px-6 md:px-10 bg-navy-green/80 lg:px-[50px] backdrop-blur-[10px] ease-in-out duration-300 ${
+					navbar ? "h-[70px]" : "h-[100px]"
+				}`}
+			>
+				<nav className="flex items-center justify-between w-full">
+					{/* logo and hamburger */}
+
+					<a href="/" className="text-green">
+						<VscCode size={50} />
+					</a>
+
+					<HamburgerMenu
+						onToggleMenu={toggleMenu}
+						isMenuOpen={isOpen}
+					/>
+					<DesktopNav />
+					<MobileNav isMenuOpen={isOpen} />
+				</nav>
+			</header>
+			<SideLinks />
+		</>
 	);
 };
 

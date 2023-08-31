@@ -1,21 +1,21 @@
-import Button from "../../UI/Button";
+import ResumeButton from "../ResumeButton";
 import NavLink from "./NavLink";
 
 const DesktopNav = () => {
 	return (
 		<div className="items-center hidden space-x-8 text-sm md:flex">
-			<ol className="flex space-x-8 text-lightest-green-slate">
+			<ol className="flex space-x-[22px] text-lightest-green-slate">
 				<li>
-					<NavLink name="about" index="01" />
+					<NavLink name="about" />
 				</li>
 				<li>
-					<NavLink name="projects" index="02" />
+					<NavLink name="projects" />
 				</li>
 				<li>
-					<NavLink name="contact" index="03" />
+					<NavLink name="contact" />
 				</li>
 			</ol>
-			<Button href="/resume.pdf">Resume</Button>
+			<ResumeButton />
 		</div>
 	);
 };
