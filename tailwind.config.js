@@ -21,6 +21,7 @@ export default {
 				"light-green-slate": "#acd5c6",
 				"lightest-green-slate": "#ccf6cc",
 				"green-navy-shadow": "rgba(2, 27, 11, 0.7)",
+				white: "#e7fef6",
 			},
 			fontFamily: {
 				raleway: ["Raleway", "sans-serif"],

@@ -26,11 +26,22 @@
 	section {
 		@apply max-w-[1000px] mx-auto;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold;
+	}
 }
 
 @layer components {
 	.transition-normal {
 		@apply transition-all duration-300 ease-in-out;
+	}
+	.shadow-normal {
+		@apply shadow-[0_10px_30px_-15px] shadow-green-navy-shadow;
 	}
 
 	.mobile-links {
@@ -39,11 +50,10 @@
 
 	.big-heading {
 		font-size: clamp(40px, 7.5vw, 80px);
-		font-weight: 700;
 	}
 
 	.pill {
-		@apply bg-light-navy-green py-[6px] px-[9px] text-lightest-green-slate border border-light-green-slate rounded-md uppercase;
+		@apply bg-light-navy-green py-[6px] px-[9px] text-lightest-green-slate border border-light-green-slate rounded-md uppercase text-xs;
 	}
 
 	.hero {
@@ -55,25 +65,25 @@
 	}
 
 	.numbered-heading {
-		font-size: clamp(26px, 5vw, 32px);
-		@apply bg-dark-navy-green relative font-bold capitalize flex items-center w-fit px-4 py-1 border-light-green-slate border text-lightest-green-slate whitespace-nowrap mt-[10px] mb-10;
+		font-size: clamp(20px, 5vw, 32px);
+		@apply bg-dark-navy-green relative capitalize flex items-center w-fit px-4 py-1 border-light-green-slate border text-lightest-green-slate whitespace-nowrap mt-[10px] mb-10;
 	}
 
 	.numbered-heading::before {
 		counter-increment: section;
 		content: attr(data-num) ".";
 		font-size: clamp(16px, 3vw, 20px);
-		@apply relative self-end mb-1 mr-2 font-mono font-normal text-green md:mr-3;
+		@apply relative self-end mb-1 mr-2 font-mono font-normal max-[460px]:mb-[0.15px] text-green md:mr-3;
 	}
 
 	.profile-pic-wrapper {
-		@apply relative w-full transition-normal rounded-md bg-green hover:-translate-x-1 hover:-translate-y-1 shadow-[0_10px_30px_-15px] shadow-green-navy-shadow outline-none;
+		@apply relative w-full transition-normal rounded-md bg-green hover:-translate-x-1 hover:-translate-y-1 shadow-normal hover:shadow-green-navy-shadow outline-none hover:shadow-[0_20px_30px_-15px];
 	}
 
 	.profile-pic-wrapper::before,
 	.profile-pic-wrapper::after {
 		content: "";
-		@apply absolute block w-full h-full transition-normal rounded-md;
+		@apply absolute block w-full h-full rounded-md transition-normal;
 	}
 
 	.profile-pic-wrapper::before {
@@ -82,5 +92,9 @@
 
 	.profile-pic-wrapper::after {
 		@apply top-[14px] left-[14px] -z-[1] border-2 border-green hover:translate-x-[8px] hover:translate-y-[8px];
+	}
+
+	.project-title {
+		font-size: clamp(20px, 5vw, 28px);
 	}
 }

@@ -1,13 +1,10 @@
-import data from "../../data";
-
-const { skills } = data;
-
-const SkillsList = () => {
+/* eslint-disable react/prop-types */
+const SkillsList = ({ skills, className, pillClassName }) => {
 	return (
-		<ul className="flex flex-wrap items-center gap-2 mt-4 text-xs">
+		<ul className={`flex flex-wrap items-center gap-2 ${className}`}>
 			{skills.map((skill, index) => (
 				<li key={index}>
-					<div className="pill">{skill}</div>
+					<div className={`pill ${pillClassName}`}>{skill}</div>
 				</li>
 			))}
 		</ul>

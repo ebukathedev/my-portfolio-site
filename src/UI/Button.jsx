@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const buttonStyles =
-	"relative block transition-all duration-300 ease-in-out border rounded-md border-green hover:-translate-x-1 hover:-translate-y-1 text-green";
+	"relative block transition-normal border rounded-md border-green hover:-translate-x-1 hover:-translate-y-1 text-green";
 
 const Button = ({ children, href, className, bgColor }) => {
 	return (
@@ -17,7 +17,7 @@ const Button = ({ children, href, className, bgColor }) => {
 			>
 				{children}
 			</span>
-			<span className="absolute -z-10 inset-0 rounded-md bg-green"></span>
+			<span className="absolute inset-0 rounded-md -z-10 bg-green"></span>
 		</a>
 	);
 };
