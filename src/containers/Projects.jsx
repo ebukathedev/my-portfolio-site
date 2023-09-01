@@ -12,9 +12,9 @@ const Projects = () => {
 			<h2 className="numbered-heading" data-num="02">
 				My projects
 			</h2>
-			<ul className="space-y-[30px] sm:space-y-[70px] md:space-y-[100px]">
+			<ul className="space-y-[70px] md:space-y-[100px]">
 				{projects.map((project) => (
-					<li key={project.id} className="grid grid-cols-12 gap-8">
+					<li key={project.id} className="grid md:grid-cols-12 gap-6 items-center">
 						<FeaturedProject {...project} />
 					</li>
 				))}

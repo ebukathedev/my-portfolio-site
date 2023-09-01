@@ -1,4 +1,5 @@
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import techQuote from "./assets/images/tech-quote.jpg";
 
 const data = {
 	skills: [
@@ -36,6 +37,7 @@ const data = {
 		{
 			id: 1,
 			category: "featured",
+			image: techQuote,
 			name: "Wendy's Portfolio",
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
@@ -47,6 +49,7 @@ const data = {
 		{
 			id: 2,
 			category: "featured",
+			image: techQuote,
 			name: "React Playground",
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
@@ -58,6 +61,7 @@ const data = {
 		{
 			id: 3,
 			category: "featured",
+			image: techQuote,
 			name: "ZoidPay",
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",

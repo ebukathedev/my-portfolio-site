@@ -3,13 +3,22 @@
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import SkillsList from "../About/SkillsList";
 
-const FeaturedProject = ({ name, description, skills, github, live }) => {
+const FeaturedProject = ({
+	image,
+	name,
+	description,
+	skills,
+	github,
+	live,
+}) => {
 	return (
 		<>
 			{/* image */}
-			<div className="aspect-video bg-red-500 col-span-full shadow-normal md:col-span-6"></div>
+			{/* <div className="aspect-video bg-red-500 col-span-full shadow-normal md:col-span-5">
+				<img src={image} alt={name} className="aspect-video" />
+			</div> */}
 			{/* content */}
-			<div className="col-span-full content flex flex-col items-center pt-6 pb-5 px-6 sm:pt-10 sm:pb-7 sm:px-10 md:p-6 bg-light-navy-green rounded-md shadow-normal">
+			<div className="col-span-full flex flex-col items-center pt-6 pb-5 px-6 sm:pt-10 sm:pb-7 sm:px-10 md:p-6 bg-light-navy-green rounded-md shadow-normal">
 				<div>
 					<p className="text-green text-[13px] my-1">
 						Featured Project
