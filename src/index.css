@@ -15,7 +15,7 @@
 		@apply w-[5px];
 	}
 	html::-webkit-scrollbar-thumb {
-		@apply rounded-lg bg-dark-green-slate;
+		@apply rounded-lg bg-dark-green-slate border-r-[5px];
 	}
 	html::-webkit-scrollbar-track {
 		@apply bg-navy-green;
@@ -50,6 +50,10 @@
 
 	.big-heading {
 		font-size: clamp(40px, 7.5vw, 80px);
+	}
+
+	.medium-heading {
+		font-size: clamp(20px, 5vw, 32px);
 	}
 
 	.pill {
@@ -96,5 +100,14 @@
 
 	.project-title {
 		font-size: clamp(20px, 5vw, 28px);
+	}
+
+	.project-image {
+		@apply relative block aspect-auto col-span-full shadow-normal min-[1200px]:col-span-5;
+	}
+
+	.project-grid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		@apply grid mt-[50px] gap-[15px];
 	}
 }

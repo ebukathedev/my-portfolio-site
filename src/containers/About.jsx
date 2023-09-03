@@ -1,8 +1,9 @@
+// import { motion } from "framer-motion";
 import ProfilePic from "../components/About/ProfilePic";
 import SkillsList from "../components/About/SkillsList";
 import TextContent from "../components/About/TextContent";
-
 import data from "../data";
+import FadeUp from "../animation components/FadeUp";
 
 const { skills } = data;
 

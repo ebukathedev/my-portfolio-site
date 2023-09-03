@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import SkillsList from "../About/SkillsList";
+import Card from "../../UI/Card";
+import IconLink from "../IconLink";
 
 const FeaturedProject = ({
 	image,
@@ -10,15 +11,23 @@ const FeaturedProject = ({
 	skills,
 	github,
 	live,
+	isOdd,
 }) => {
 	return (
 		<>
 			{/* image */}
-			{/* <div className="aspect-video bg-red-500 col-span-full shadow-normal md:col-span-5">
-				<img src={image} alt={name} className="aspect-video" />
-			</div> */}
+			<a
+				href={live}
+				target="_blank"
+				rel="noreferrer"
+				className={`project-image ${isOdd && "min-[1200px]:order-2"}`}
+			>
+				<div className="transition-normal ease-out">
+					<img src={image} alt={name} className="object-cover" />
+				</div>
+			</a>
 			{/* content */}
-			<div className="col-span-full flex flex-col items-center pt-6 pb-5 px-6 sm:pt-10 sm:pb-7 sm:px-10 md:p-6 bg-light-navy-green rounded-md shadow-normal">
+			<Card className="flex flex-col items-center px-6 pt-6 pb-5 col-span-full sm:pt-10 sm:pb-7 sm:px-10 md:p-6 min-[1200px]:col-span-7">
 				<div>
 					<p className="text-green text-[13px] my-1">
 						Featured Project
@@ -29,13 +38,13 @@ const FeaturedProject = ({
 							target="_blank"
 							rel="noreferrer"
 							title="Live site"
-							className="text-white transition-normal hover:text-green"
+							className="block text-white transition-normal hover:text-green focus:text-green"
 						>
 							{name}
 						</a>
 					</h3>
 
-					<div className="mt-5 mb-7 space-y-2">
+					<div className="mt-5 space-y-2 mb-7">
 						{description.map((paragraph, index) => (
 							<p key={index}>{paragraph}</p>
 						))}
@@ -46,27 +55,23 @@ const FeaturedProject = ({
 						className="mb-3"
 					/>
 					<div className="flex text-lightest-green-slate items-center -ml-[10px]">
-						<a
+						<IconLink
 							href={github}
-							target="_blank"
-							rel="noreferrer"
 							title="Github"
-							className="p-[10px] transition-normal hover:text-green"
+							className="p-[10px]"
 						>
 							<FiGithub size={20} />
-						</a>
-						<a
+						</IconLink>
+						<IconLink
 							href={live}
-							target="_blank"
-							rel="noreferrer"
 							title="Live site"
-							className="p-[10px] transition-normal hover:text-green"
+							className="p-[10px]"
 						>
 							<FiExternalLink size={20} />
-						</a>
+						</IconLink>
 					</div>
 				</div>
-			</div>
+			</Card>
 		</>
 	);
 };

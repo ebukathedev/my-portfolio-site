@@ -1,15 +1,8 @@
-import { useState } from "react";
 import profilePic from "../../assets/images/profile-pic.jpg";
+import useHover from "../../hooks/use-hover";
 
 const ProfilePic = () => {
-	const [isHovering, setIsHovering] = useState(false);
-
-	const handleMouseOver = () => {
-		setIsHovering(true);
-	};
-	const handleMouseOut = () => {
-		setIsHovering(false);
-	};
+	const [isHovering, handleMouseOver, handleMouseOut] = useHover();
 
 	return (
 		<div
@@ -20,7 +13,7 @@ const ProfilePic = () => {
 			onMouseOut={handleMouseOut}
 		>
 			<div
-				className={`max-w-[500px] transition-all duration-300 ease-out contrast-[1] ${
+				className={`max-w-[500px] transition-normal ease-out contrast-[1] ${
 					!isHovering && "grayscale mix-blend-multiply"
 				}`}
 			>
