@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import DesktopNav from "../components/Navbar/DesktopNav";
 import MobileNav from "../components/Navbar/MobileNav";
@@ -6,12 +7,8 @@ import { VscCode } from "react-icons/vsc";
 import SideLinks from "../components/SideLinks";
 import FadeIn from "../animation components/FadeIn";
 
-const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false);
+const Navbar = ({isOpen, toggleMenu}) => {
 	const [navbar, setNavbar] = useState(false);
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
 
 	useEffect(() => {
 		const changeHeight = () => {
