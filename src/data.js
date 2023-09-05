@@ -4,6 +4,7 @@ import project2 from "./assets/images/zoidpay.png";
 import project3 from "./assets/images/react-playground.png";
 
 const data = {
+	pageSections: ["about", "projects", "contact"],
 	skills: [
 		"html",
 		"css",
@@ -65,117 +66,6 @@ const data = {
 			category: "featured",
 			image: project3,
 			name: "React Playground",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 4,
-			category: "featured",
-			image: project3,
-			name: "Scientific Calculator",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 5,
-			category: "other",
-			name: "Note Taking App",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 6,
-			category: "other",
-			name: "Emojipedia",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 7,
-			category: "other",
-			name: "To-do App",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 8,
-			category: "other",
-			name: "Expense Tracker",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 9,
-			category: "other",
-			name: "Food Order App",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 10,
-			category: "other",
-			name: "Quiz App",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 11,
-			category: "other",
-			name: "Dummy 1",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 12,
-			category: "other",
-			name: "Dummy 2",
-			description: [
-				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
-			],
-			skills: ["react", "tailwind css", "animations"],
-			github: "#",
-			live: "#",
-		},
-		{
-			id: 13,
-			category: "other",
-			name: "Dummy 3",
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
 			],

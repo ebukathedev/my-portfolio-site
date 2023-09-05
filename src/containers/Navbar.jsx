@@ -7,7 +7,7 @@ import { VscCode } from "react-icons/vsc";
 import SideLinks from "../components/SideLinks";
 import FadeIn from "../animation components/FadeIn";
 
-const Navbar = ({isOpen, toggleMenu}) => {
+const Navbar = ({ isOpen, toggleMenu }) => {
 	const [navbar, setNavbar] = useState(false);
 
 	useEffect(() => {
@@ -54,7 +54,7 @@ const Navbar = ({isOpen, toggleMenu}) => {
 						/>
 					</FadeIn>
 					<DesktopNav />
-					<MobileNav isMenuOpen={isOpen} />
+					<MobileNav isMenuOpen={isOpen} onToggleMenu={toggleMenu} />
 				</nav>
 			</header>
 			<SideLinks />
