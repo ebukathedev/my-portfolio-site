@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import Button from "../UI/Button";
+import Heading from "../animation components/Heading";
+import ListItem from "../animation components/ListItem";
 import OtherProject from "../components/Projects/OtherProject";
 
 const OtherProjects = ({ projects }) => {
@@ -23,15 +25,18 @@ const OtherProjects = ({ projects }) => {
 
 	return (
 		<section className="section">
-			<h2 className="medium-heading text-lightest-green-slate text-center capitalize">
+			<Heading className="medium-heading text-lightest-green-slate text-center capitalize">
 				Other noteworthy projects
-			</h2>
+			</Heading>
 			<ul className="project-grid">
-				{otherProjects.map((project) => (
-					<li key={project.id}>
-						<OtherProject {...project} />
-					</li>
-				))}
+				{otherProjects.map((project, index) => {
+					const step = index / 10;
+					return (
+						<ListItem key={project.id} delay={0.4 + step}>
+							<OtherProject {...project} />
+						</ListItem>
+					);
+				})}
 			</ul>
 			{projects.length > 6 && (
 				<Button

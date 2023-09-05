@@ -1,13 +1,14 @@
+import DivContainer from "../animation components/DivContainer";
 import InlineLink from "../components/InlineLink";
 import SocialLinks from "../components/SocialLinks";
 
 const Footer = () => {
 	return (
 		<footer className="p-[15px] flex flex-col items-center text-center">
-			<div className="md:hidden">
+			<DivContainer className="md:hidden">
 				<SocialLinks />
-			</div>
-			<div className="space-y-1 text-[13px] tracking-wide">
+			</DivContainer>
+			<DivContainer className="space-y-1 text-[13px] tracking-wide">
 				<a href="#" className="transition-normal hover:text-green">
 					Built by Ebuka Ejiofor
 				</a>
@@ -23,7 +24,7 @@ const Footer = () => {
 						text="Anthony Akpan"
 					/>
 				</p>
-			</div>
+			</DivContainer>
 		</footer>
 	);
 };

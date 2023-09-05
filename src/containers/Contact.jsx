@@ -1,13 +1,18 @@
 import ButtonLink from "../UI/ButtonLink";
+import Heading from "../animation components/Heading";
+import DivContainer from "../animation components/DivContainer";
 
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
 	return (
 		<section id="contact" className="section mb-[50px]">
-			<h2 className="numbered-heading" data-num="03">
+			<Heading className="numbered-heading" data-num="03">
 				Contact
-			</h2>
-			<div className="text-center flex flex-col items-center max-w-[600px] mx-auto pt-10">
+			</Heading>
+			<DivContainer
+				delay={0.4}
+				className="text-center flex flex-col items-center max-w-[600px] mx-auto pt-10"
+			>
 				<h2 className="text-4xl md:text-5xl text-lightest-green-slate capitalize mb-3 md:mb-4">
 					Get in touch
 				</h2>
@@ -23,7 +28,7 @@ const Contact = () => {
 				>
 					Say hello
 				</ButtonLink>
-			</div>
+			</DivContainer>
 		</section>
 	);
 };

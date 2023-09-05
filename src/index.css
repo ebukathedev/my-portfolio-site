@@ -61,7 +61,7 @@
 	}
 
 	.hero {
-		@apply h-screen min-h-screen pt-0 pb-0 flex flex-col justify-center items-start min-[700px]:h-auto min-[700px]:pt-[100px] max-[360px]:h-auto max-[360px]:pt-[100px];
+		@apply h-screen min-h-screen pt-[100px] pb-0 flex flex-col justify-center items-start min-[700px]:h-auto max-[360px]:h-auto;
 	}
 
 	.section {
