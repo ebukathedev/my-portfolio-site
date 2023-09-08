@@ -9,7 +9,12 @@ const Footer = () => {
 				<SocialLinks />
 			</DivContainer>
 			<DivContainer className="space-y-1 text-[13px] tracking-wide">
-				<a href="#" className="transition-normal hover:text-green">
+				<a
+					href="https://github.com/ebukathedev/my-portfolio-site"
+					target="_blank"
+					rel="noreferrer"
+					className="transition-normal hover:text-green"
+				>
 					Built by Ebuka Ejiofor
 				</a>
 				<p>

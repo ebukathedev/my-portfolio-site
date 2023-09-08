@@ -103,7 +103,10 @@
 	}
 
 	.project-image {
-		@apply relative block aspect-auto col-span-full shadow-normal min-[1200px]:col-span-5;
+		@apply relative block aspect-auto col-span-full shadow-normal min-[1200px]:col-span-5 bg-green;
+	}
+	.project-image::before {
+		@apply top-0 left-0 bg-navy-green absolute block w-full h-full transition-normal;
 	}
 
 	.project-grid {

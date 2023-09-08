@@ -2,9 +2,9 @@ const TextContent = () => {
 	return (
 		<div className="flex flex-col space-y-2">
 			<p>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-				Dolores voluptatibus iste ut impedit, tempora expedita ipsum
-				facilis? Ducimus, est iusto.
+				I’m Ebuka, a passionate web developer specializing in React.js
+				and Tailwind CSS. Dolores voluptatibus iste ut impedit, tempora
+				expedita ipsum facilis? Ducimus, est iusto.
 			</p>
 			<p>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic

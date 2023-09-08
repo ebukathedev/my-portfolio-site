@@ -40,10 +40,13 @@ const Hero = () => {
 
 			<FadeUp delay={isDesktop ? 1.25 : 0.8}>
 				<p className="mt-5 max-w-[550px] lg:text-lg lg:max-w-[590px]">
-					I’m a software engineer specializing in building Frontend
-					applications and exceptional digital experiences. I take
-					pride in my work and ensure I deliver the fastest and most
-					responsive application possible.
+					I am a{" "}
+					<span className="text-green">Frontend Web Developer</span>.
+					I specialize in creating visually stunning websites that are
+					both user-friendly and efficient. With my eye for design and
+					attention to detail, I work tirelessly to ensure that each
+					website I create is beautiful, fully functional, and easy to
+					navigate.
 				</p>
 			</FadeUp>
 

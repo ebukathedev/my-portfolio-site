@@ -3,6 +3,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import SkillsList from "../About/SkillsList";
 import Card from "../../UI/Card";
 import IconLink from "../IconLink";
+import ProjectImage from "./ProjectImage";
 
 const FeaturedProject = ({
 	image,
@@ -16,16 +17,7 @@ const FeaturedProject = ({
 	return (
 		<>
 			{/* image */}
-			<a
-				href={live}
-				target="_blank"
-				rel="noreferrer"
-				className={`project-image ${isOdd && "min-[1200px]:order-2"}`}
-			>
-				<div className="transition-normal ease-out">
-					<img src={image} alt={name} className="object-cover" />
-				</div>
-			</a>
+			<ProjectImage live={live} isOdd={isOdd} image={image} />
 			{/* content */}
 			<Card className="flex flex-col items-center px-6 pt-6 pb-5 col-span-full sm:pt-10 sm:pb-7 sm:px-10 md:p-6 min-[1200px]:col-span-7">
 				<div>

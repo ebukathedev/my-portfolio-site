@@ -11,7 +11,7 @@ const data = {
 		"sass",
 		"tailwind css",
 		"javascript",
-		"react",
+		"react.js",
 		"git",
 		"github",
 		"figma",
@@ -45,7 +45,7 @@ const data = {
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
 			],
-			skills: ["react", "tailwind css", "animations"],
+			skills: ["react.js", "tailwind css", "animations"],
 			github: "#",
 			live: "#",
 		},
@@ -57,7 +57,7 @@ const data = {
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
 			],
-			skills: ["react", "tailwind css", "animations"],
+			skills: ["react.js", "tailwind css", "animations"],
 			github: "#",
 			live: "#",
 		},
@@ -69,7 +69,7 @@ const data = {
 			description: [
 				"Lorem ipsum dolor sit amet consectetu adipisicing elit. Rerum nemo fugiat saepe unde optio dolorem possimus repudiandae corrupti, del pariatur! Aperiam neque ame ipsam corrupti, aspernatur c nisi?",
 			],
-			skills: ["react", "tailwind css", "animations"],
+			skills: ["react.js", "tailwind css", "animations"],
 			github: "#",
 			live: "#",
 		},
