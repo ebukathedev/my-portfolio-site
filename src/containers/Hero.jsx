@@ -9,10 +9,8 @@ const Hero = () => {
 		const windowWidth = window.innerWidth;
 		if (windowWidth >= 768) {
 			setIsDesktop(true);
-			console.log(windowWidth, true);
 		} else {
 			setIsDesktop(false);
-			console.log(windowWidth, false);
 		}
 	}, []);
 
@@ -41,7 +39,7 @@ const Hero = () => {
 			<FadeUp delay={isDesktop ? 1.25 : 0.8}>
 				<p className="mt-5 max-w-[550px] lg:text-lg lg:max-w-[590px]">
 					I am a{" "}
-					<span className="text-green">Frontend Web Developer</span>.
+					<span className="text-green">Front-end Web Developer</span>.
 					I specialize in creating visually stunning websites that are
 					both user-friendly and efficient. With my eye for design and
 					attention to detail, I work tirelessly to ensure that each

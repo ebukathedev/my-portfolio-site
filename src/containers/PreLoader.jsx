@@ -3,7 +3,7 @@ import { AiOutlineRocket } from "react-icons/ai";
 
 // When ready to add a preloader put this code in App.js
 // import PreLoader from "./containers/PreLoader";
-// const [isLoading, setIsLoading] = useState(false);
+// const [isLoading, setIsLoading] = useState(true);
 // useEffect(() => {
 // 	const showPreLoader = setTimeout(() => {
 // 		setIsLoading(false);

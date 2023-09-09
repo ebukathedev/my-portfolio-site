@@ -18,7 +18,7 @@ const Footer = () => {
 					Built by Ebuka Ejiofor
 				</a>
 				<p>
-					Inspired by{" "}
+					Design inspired by{" "}
 					<InlineLink
 						href="https://v4.brittanychiang.com/"
 						text="Brittany Chiang"

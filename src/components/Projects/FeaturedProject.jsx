@@ -19,7 +19,7 @@ const FeaturedProject = ({
 			{/* image */}
 			<ProjectImage live={live} isOdd={isOdd} image={image} />
 			{/* content */}
-			<Card className="flex flex-col items-center px-6 pt-6 pb-5 col-span-full sm:pt-10 sm:pb-7 sm:px-10 md:p-6 min-[1200px]:col-span-7">
+			<Card className="flex flex-col px-6 pt-6 pb-5 col-span-full sm:pt-10 sm:pb-7 sm:px-10 md:p-6 min-[1200px]:col-span-7">
 				<div>
 					<p className="text-green text-[13px] my-1">
 						Featured Project
