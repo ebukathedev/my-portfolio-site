@@ -37,6 +37,30 @@ const data = {
 		{
 			id: 1,
 			category: "featured",
+			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1695453751/my%20portfolio/projects/moviebox.png",
+			name: "MovieBox",
+			description: [
+				"A movie discovery web application. Movie Box allows users to search for movies, view detailed information about them, and save their favorite movies for later.",
+			],
+			skills: ["react.js", "tailwind css", "api"],
+			github: "https://github.com/ebukathedev/movie-box",
+			live: "https://ebukathedev-moviebox.netlify.app/",
+		},
+		{
+			id: 2,
+			category: "featured",
+			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1695453746/my%20portfolio/projects/imageblitz.png",
+			name: "ImageBlitz",
+			description: [
+				"ImageBlitz is an image gallery application. Authenticated users can explore a captivating collection of stunning images, effortlessly search for their favorites, and even indulge their artistic side by intuitively rearranging images with a simple drag-and-drop interface, all within the app. ",
+			],
+			skills: ["react.js", "tailwind css", "api", "firebase"],
+			github: "https://github.com/ebukathedev/ImageBlitz",
+			live: "https://ebukathedev-imageblitz.netlify.app/",
+		},
+		{
+			id: 3,
+			category: "featured",
 			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/wendys-portfolio_otm9n2.png",
 			name: "Wendy's Portfolio",
 			description: [
@@ -47,19 +71,7 @@ const data = {
 			live: "https://wendys-portfolio.vercel.app/",
 		},
 		{
-			id: 2,
-			category: "featured",
-			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246106/my%20portfolio/projects/zoidpay_lwk0oj.png",
-			name: "ZoidPay",
-			description: [
-				"This project, inspired by the creative community on Figma, began as a design exploration for a sleek landing page. While it's a work in progress, it showcases my dedication to bringing innovative design ideas to life through web development, even if not fully completed.",
-			],
-			skills: ["react.js", "tailwind css"],
-			github: "https://github.com/ebukathedev/zoidpay-crypto-landing-page",
-			live: "https://ebukathedev-zoidpay.netlify.app",
-		},
-		{
-			id: 3,
+			id: 4,
 			category: "featured",
 			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/react-playground_ksysnr.png",
 			name: "React Playground",
@@ -71,7 +83,7 @@ const data = {
 			live: "https://ebukathedev-react-playground.netlify.app",
 		},
 		{
-			id: 4,
+			id: 5,
 			category: "featured",
 			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/ip-tracker_ymfutd.png",
 			name: "IP Location Tracker",
@@ -81,16 +93,6 @@ const data = {
 			skills: ["html", "css", "javascript", "api"],
 			github: "https://github.com/ebukathedev/IP-Address-Location-Tracker-",
 			live: "https://ebukathedev.github.io/IP-Address-Location-Tracker-/",
-		},
-		{
-			id: 5,
-			category: "featured",
-			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246106/my%20portfolio/projects/calculator_o9ryqm.png",
-			name: "Scientific Calculator",
-			description: ["A simple scientific calculator."],
-			skills: ["html", "css", "javascript"],
-			github: "https://github.com/ebukathedev/Scientific-Calculator-",
-			live: "https://ebukathedev.github.io/Scientific-Calculator-/",
 		},
 	],
 };
