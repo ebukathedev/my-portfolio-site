@@ -9,6 +9,8 @@ const data = {
 		"tailwind css",
 		"javascript",
 		"react.js",
+		"next.js",
+		"typescript",
 		"git",
 		"github",
 		"figma",
