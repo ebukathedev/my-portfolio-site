@@ -7,6 +7,7 @@ const data = {
 		"css",
 		"sass",
 		"tailwind css",
+		"styled-components",
 		"javascript",
 		"react.js",
 		"next.js",
@@ -72,30 +73,30 @@ const data = {
 			github: "https://github.com/ebukathedev/wendys-portfolio",
 			live: "https://wendys-portfolio.vercel.app/",
 		},
-		{
-			id: 4,
-			category: "featured",
-			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/react-playground_ksysnr.png",
-			name: "React Playground",
-			description: [
-				"A site where I develop and display mini React applications, each focused on practicing and learning specific React concepts. From state management to API integration, these mini-apps encompass a wide range of React topics. ",
-			],
-			skills: ["react.js", "tailwind css"],
-			github: "https://github.com/ebukathedev/react-playground",
-			live: "https://ebukathedev-react-playground.netlify.app",
-		},
-		{
-			id: 5,
-			category: "featured",
-			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/ip-tracker_ymfutd.png",
-			name: "IP Location Tracker",
-			description: [
-				"A simple tracker that displays information about an IP address and shows the location on a map.",
-			],
-			skills: ["html", "css", "javascript", "api"],
-			github: "https://github.com/ebukathedev/IP-Address-Location-Tracker-",
-			live: "https://ebukathedev.github.io/IP-Address-Location-Tracker-/",
-		},
+		// {
+		// 	id: 4,
+		// 	category: "featured",
+		// 	image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/react-playground_ksysnr.png",
+		// 	name: "React Playground",
+		// 	description: [
+		// 		"A site where I develop and display mini React applications, each focused on practicing and learning specific React concepts. From state management to API integration, these mini-apps encompass a wide range of React topics. ",
+		// 	],
+		// 	skills: ["react.js", "tailwind css"],
+		// 	github: "https://github.com/ebukathedev/react-playground",
+		// 	live: "https://ebukathedev-react-playground.netlify.app",
+		// },
+		// {
+		// 	id: 5,
+		// 	category: "featured",
+		// 	image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/ip-tracker_ymfutd.png",
+		// 	name: "IP Location Tracker",
+		// 	description: [
+		// 		"A simple tracker that displays information about an IP address and shows the location on a map.",
+		// 	],
+		// 	skills: ["html", "css", "javascript", "api"],
+		// 	github: "https://github.com/ebukathedev/IP-Address-Location-Tracker-",
+		// 	live: "https://ebukathedev.github.io/IP-Address-Location-Tracker-/",
+		// },
 	],
 };
 

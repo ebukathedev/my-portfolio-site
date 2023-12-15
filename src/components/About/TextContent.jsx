@@ -4,7 +4,7 @@ const TextContent = () => {
 		<div className="flex flex-col space-y-2">
 			<p>
 				Hi, I'm Ebuka, a front-end web developer specializing in
-				React.js and Tailwind CSS. I'm passionate about creating
+				React.js and TypeScript. I'm passionate about creating
 				engaging digital experiences and am always eager to learn and
 				grow.
 			</p>
