@@ -1,11 +1,15 @@
 /* eslint-disable react/prop-types */
-import Button from "../UI/Button";
+import ButtonLink from "../UI/ButtonLink";
 
 const ResumeButton = ({ className, bgColor }) => {
 	return (
-		<Button href="#" innerClassName={className} bgColor={bgColor}>
+		<ButtonLink
+			href="https://drive.google.com/file/d/1P1W7cMifA1kus6IIvsQ6GDpwtbOv1Bec/view?usp=drive_link"
+			className={className}
+			bgColor={bgColor}
+		>
 			Resume
-		</Button>
+		</ButtonLink>
 	);
 };
 
