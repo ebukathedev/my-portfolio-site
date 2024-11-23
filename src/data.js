@@ -64,6 +64,28 @@ const data = {
 		{
 			id: 3,
 			category: "featured",
+			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1732347396/my%20portfolio/projects/afrodevs_eqzwr2.png",
+			name: "Afrodevs Landing page",
+			description: [
+				"Afrodevs is a community of vetted engineers that work fast and provide experience & ideas that get your projects up and running.",
+			],
+			skills: ["react.js", "tailwind css"],
+			live: "https://afrodevs-site-v2.vercel.app/",
+		},
+		{
+			id: 4,
+			category: "featured",
+			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1732347761/my%20portfolio/projects/labubutos_enyb9c.png",
+			name: "LABUBUTOS - Memecoin Launch Page",
+			description: [
+				"A modern and engaging launch page for LABUBUTOS, the #1 Meme Fan Token on the Aptos blockchain.",
+			],
+			skills: ["react.js", "tailwind css"],
+			live: "https://www.labubutos.xyz/",
+		},
+		{
+			id: 5,
+			category: "featured",
 			image: "https://res.cloudinary.com/drtebxtdt/image/upload/v1694246107/my%20portfolio/projects/wendys-portfolio_otm9n2.png",
 			name: "Wendy's Portfolio",
 			description: [

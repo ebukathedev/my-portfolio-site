@@ -47,20 +47,24 @@ const FeaturedProject = ({
 						className="mb-3"
 					/>
 					<div className="flex text-lightest-green-slate items-center -ml-[10px]">
-						<IconLink
-							href={github}
-							title="Github"
-							className="p-[10px]"
-						>
-							<FiGithub size={20} />
-						</IconLink>
-						<IconLink
-							href={live}
-							title="Live site"
-							className="p-[10px]"
-						>
-							<FiExternalLink size={20} />
-						</IconLink>
+						{github && (
+							<IconLink
+								href={github}
+								title="Github"
+								className="p-[10px]"
+							>
+								<FiGithub size={20} />
+							</IconLink>
+						)}
+						{live && (
+							<IconLink
+								href={live}
+								title="Live site"
+								className="p-[10px]"
+							>
+								<FiExternalLink size={20} />
+							</IconLink>
+						)}
 					</div>
 				</div>
 			</Card>
